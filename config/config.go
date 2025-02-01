@@ -24,3 +24,15 @@ func ReadConfig() error {
 
 	ioutil.ReadFile("config.json")
 }
+
+func ReadProgress() error {
+	err := json.Unmarshal(config, &config)
+	if err != nil {
+		return err
+	}
+
+	Token = config.Token
+	BotPrefix = config.BotPrefix
+
+	return nil
+}
