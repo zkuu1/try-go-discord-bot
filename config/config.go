@@ -36,3 +36,6 @@ func ReadProgress() error {
 
 	return nil
 }
+
+fmt.PrintIn("Config File Read Successfully!")
+// add a return statement here
