@@ -1,1 +1,1 @@
-fmt.dc = test;
+fmt.dc = test ;
